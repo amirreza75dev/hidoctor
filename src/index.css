@@ -1,13 +1,161 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  padding: 0;
+  margin: 0 ;
+  box-sizing: border-box !important;
+}
+body{
+  overflow-x: hidden;
+}
+.app{
+  width: 100%;
+ 
+  /* background: black;
+  height: 60px; */
+
+  
+
+}
+.container{
+  box-sizing: border-box;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header{
+  z-index: 5;
+  width: 100%;
+}
+.header-off{
+  display: none;
+  transition: 0.3s ease-in;
+}
+
+.btn-search:hover{
+  background: none !important;
+
+}
+
+.input-search:focus{
+  border: none !important;
+  
+
+}
+
+
+/* latest */
+
+.latest{
+  background: #F4F4F4;
+  margin-top: 100px;
+  width: 100%;
+
+}
+
+@media screen and (min-width:950px) {
+  .card-latest{
+  
+    width: 15rem !important;
+  }
+  
+}
+
+/* category */
+
+
+.category{
+  width: 100%;
+  display: block;
+  background: #F4F4F4;
+}
+
+.link-hover:hover{
+  background: green;
+  color: white !important;
+
+
+}
+
+.like{
+  position: relative;
+}
+
+.like::after{
+  content: '3';
+  border-radius: 50%;
+  right: 25px;
+  top: 25px;
+  background: red;
+  color: white;
+  padding: 3px;
+  font-size: 10px;
+}
+
+
+.img-time{
+  position: relative;
+}
+.img-time::after{
+  content: '2 دقیقه زمان مطالعه';
+  position: absolute;
+  
+
+  top: 10%;
+  right: 10%;
+  color: black;
+  background: rgb(255, 255, 255,0.7);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+
+/* pregnancy */
+
+.pregnancy{
+  background: #2C2C2C;
+}
+
+/* special */
+.special{
+  background: #F4F4F4;
+}
+.special-box{
+  
+  /* max-width: 23% !important; */
+  
+  min-height: 220px;
+
+  position: relative;
+  overflow: hidden;
+  background: #F4F4F4 !important;
+  
+}
+.special-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.special-text{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+
+}
+
+.overlay-special{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.45);
+  z-index: 3;
+  top: 0;
+  right: 0;
+  
 }
